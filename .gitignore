@@ -1,0 +1,15 @@
+# Node.js
+node_modules/
+
+# Prisma
+.prisma/
+
+# Logs
+*.log
+
+# .env file
+.env
+
+# Operating system files
+.DS_Store
+Thumbs.db
