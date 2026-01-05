@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "tsx src/index.ts",
     "build": "tsc",
-    "start": "prisma migrate deploy && tsx src/index.ts",
-    "postinstall": "chmod +x node_modules/.bin/tsx"
+    "start": "npm run migrate && tsx src/index.ts",
+    "postinstall": "chmod +x node_modules/.bin/tsx",
+    "migrate": "npx prisma migrate deploy"
   },
   "dependencies": {
     "@prisma/client": "6.19.0",
