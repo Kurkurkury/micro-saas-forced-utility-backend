@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsx src/index.ts",
     "build": "tsc",
-    "start": "npm run migrate && tsx src/index.ts",
+    "start": "npx prisma migrate deploy && tsx src/index.ts",
     "postinstall": "chmod +x node_modules/.bin/tsx",
     "migrate": "npx prisma migrate deploy"
   },
