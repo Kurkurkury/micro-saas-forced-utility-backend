@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tsx src/index.ts",
     "build": "tsc",
-    "start": "tsx src/index.ts"
+    "start": "tsx src/index.ts",
+    "postinstall": "chmod +x node_modules/.bin/tsx"
   },
   "dependencies": {
     "@prisma/client": "6.19.0",
